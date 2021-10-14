@@ -1,0 +1,55 @@
+
+MoviesController
+  Test for Index Method
+.    should render the homepage
+.    should render all movies when none of the boxes are selected
+.    should render movies filtered on given ratings
+.    should render movies sorted by title column
+.    sort on title should change color of column header
+.    sort on release date should change color of column header
+.    should render movies sorted by given column and filtered on given ratings
+  Test for new Method
+.    should render the new movie page
+  Test for New Movie Creation
+.    creates a new movie
+.    redirects to the home page
+  Test for show movie page
+.    should find the movie
+.    should render the show template
+  Test for Edit Movie Page
+.    should find the movie
+.    should render the edit template
+  Test for Update Movie
+.    updates an existing movie
+.    redirects to the movie page
+  Test for Movie Delete
+.    destroys a movie
+.    redirects to movies#index after destroy
+  Test for searching movies of same director
+.    should call Movie.similar_movies
+.    should display movies of the same director if they exist
+.    should redirect to home page for movies without a director
+
+Movie
+  Test for movies by same director
+    Movie has a director
+.      Finds the movies by same director correctly
+    Movie does not have a director
+.      Sad Path scenario
+  Test to return all the ratings
+.    Returns all ratings
+  Test for filtering and sorting movies based on ratings
+.    Return movies filtered using given ratings
+.    Return movies sorted using given sorting criteria
+
+
+2 deprecation warnings total
+
+Finished in 0.15844 seconds (files took 1.57 seconds to load)
+26 examples, 0 failures
+
+Finished in 0.15844 seconds (files took 1.57 seconds to load)
+26 examples, 0 failures
+
+
+Coverage report generated for Cucumber Features, RSpec to /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/coverage. 82 / 86 LOC (95.35%) covered.
